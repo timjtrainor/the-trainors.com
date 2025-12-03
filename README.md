@@ -1,20 +1,45 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Tim Trainor Portfolio
 
-# Run and deploy your AI Studio app
+This is the personal portfolio website for Tim Trainor, a Product + Engineering Leader specializing in ROI-driven AI and Data Platforms.
 
-This contains everything you need to run your app locally.
+The site showcases Tim's leadership principles, proof of concepts, and strategic documents from his career in engineering and product management.
 
-View your app in AI Studio: https://ai.studio/apps/drive/11Bv6jbBis5f2PhsXSFGrJWCTfuK54Rc-
+## Tech Stack
+
+- **Frontend**: React 19 with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS with custom Inter font
+- **Icons**: Lucide React
+- **Deployment**: Hosted at [the-trainors.com](https://the-trainors.com)
+
+## Site Sections
+
+- **Hero**: Introduction and professional summary
+- **About**: Personal background and expertise
+- **Leadership**: Core principles in Engineering, Product, and AI Strategy
+- **Proof of Concepts**: Experimental projects like Brand Sync (RAG-driven content engine)
+- **Strategic Documents**: Business cases and technical architectures
+- **Contact**: Get in touch information
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
-
+**Prerequisites:** Node.js
 
 1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+   ```bash
+   npm install
+   ```
+
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+3. Open [http://localhost:5173](http://localhost:5173) in your browser
+
+## Build for Production
+
+```bash
+npm run build
+npm run preview
+```
