@@ -27,7 +27,7 @@ jobs:
           commit-message: "Build and update docs folder"
           title: "Auto-build: Update docs folder"
           body: "Automated build of the docs folder from the latest main branch changes."
-          branch: auto-build-docs
+          branch: built-docs
           delete-branch: true
           add-paths: |
             docs/
