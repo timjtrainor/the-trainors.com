@@ -10,6 +10,9 @@
 /.parcel-cache/
 /public/build/
 
+# GitHub Pages: keep built assets in docs/ under version control
+!docs/
+
 # TypeScript
 *.tsbuildinfo
 
