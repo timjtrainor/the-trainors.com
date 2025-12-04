@@ -40,5 +40,5 @@ jobs:
           git add docs/
           if ! git diff --staged --quiet; then
             git commit -m "Build and update docs folder"
-            git push
+            git push origin HEAD:main
           fi
