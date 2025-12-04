@@ -1,0 +1,33 @@
+name: Build to docs folder
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        run: npm ci
+      - name: Build
+        run: npm run build
+      - name: Create Pull Request with built docs
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "Build and update docs folder"
+          title: "Auto-build: Update docs folder"
+          body: "Automated build of the docs folder from the latest main branch changes."
+          branch: auto-build-docs
+          delete-branch: true
+          add-paths: |
+            docs/
