@@ -15,27 +15,35 @@ export const POC_DATA: Project[] = [
     title: 'Brand Sync (RAG)',
     summary: 'A RAG-driven content engine designed to scale executive communication without diluting authenticity. By grounding generation in historical data and real-time context, it reduces drafting time by 80% while ensuring 100% brand alignment—turning high-touch personal branding into a scalable workflow.',
     category: 'POC',
-    tags: ['Generative AI', 'Process Automation', 'Brand Strategy'],
+    tags: ['GCP', 'Generative AI', 'RAG', 'Process Automation', 'Brand Strategy'],
     link: 'https://ai-content.trainoronline.com/' 
-  }
+  },
+  {
+    id: 'poc-2',
+    title: 'Requirements Evaluator (EVALs)',
+    summary: 'A serverless AI platform built with AWS Lambda and Amazon Bedrock that systematically audits software requirements for precision and quality. It streamlines the technical review process by providing automated scoring, actionable improvement suggestions, and a dedicated performance harness to ensure high-accuracy AI outputs.',
+    category: 'POC',
+    tags: ['AWS', 'Generative AI', 'EVALs', 'SDLC'],
+    link: 'https://req-eval.trainoronline.com/'
+  },
 ];
 
 export const DOCUMENTS_DATA: Project[] = [
   {
     id: 'doc-1',
-    title: 'Monolith to Microservices Business Case',
-    summary: 'A strategic PRD that reframed a technical migration as a business necessity. Modeled a 30% increase in deployment velocity and a 15% reduction in QA overhead, proving that "paying down debt" was actually an investment in market responsiveness.',
+    title: 'PRD - AI Requirements Quality Evaluator',
+    summary: 'PRD for a practical AI tool that turns messy requirements into clear, reliable inputs for engineering teams. It cuts ambiguity early so teams can focus on building instead of decoding intent.',
     category: 'Document',
-    tags: ['ROI Analysis', 'Platform Strategy', 'Change Management'],
-    link: '' // Add link to PDF or Notion doc
+    tags: ['PRD', 'Product Management', 'Technical'],
+    link: '/documents/AI_Requirements_Evaluator_PRD.pdf' // Add link to PDF or Notion doc
   },
   {
     id: 'doc-2',
-    title: 'High-Scale Ingestion Architecture',
-    summary: 'Technical architecture for a real-time analytics pipeline. The design prioritized the "Cost vs. Latency" trade-off, selecting serverless patterns that handled 10k+ events/sec while keeping cloud costs linear, not exponential, as traffic spiked.',
+    title: 'Architecture Diagram - AI Requirements Quality Evaluator',
+    summary: 'A lightweight serverless workflow where user inputs flow through API Gateway and Lambda to Bedrock, with DynamoDB and CloudWatch keeping the system fast, reliable, and cost-safe. Built to deliver trustworthy AI evaluations without operational overhead.',
     category: 'Document',
-    tags: ['System Design', 'Cost Optimization', 'Reliability'],
-    link: '' // Add link to PDF or Diagram
+    tags: ['System Design', 'AWS', 'Reliability'],
+    link: 'https://miro.com/app/board/uXjVJgaDe-Q=/?share_link_id=363487307617' // Add link to PDF or Diagram
   }
 ];
 
@@ -46,14 +54,14 @@ export const LEADERSHIP_DATA: LeadershipPrinciple[] = [
     description: 'Starting with culture; teams need psychological safety and clarity before they can build anything meaningful. I keep systems intentional instead of over-engineered, and I lead teams to deliver value in steady, incremental steps.'
   },
   {
-    title: 'Product Leader',
+    title: 'Product Vision',
     category: 'Product',
     description: 'Customer value and business impact guide every decision and I will challenge anything, at any level, that can’t be tied to real outcomes. If a feature doesn’t drive revenue, retention, or efficiency, it stays in the backlog.'
   },
   {
     title: 'AI Strategy',
     category: 'AI',
-    description: 'AI isn’t inherently magical. Without governance, evaluation, and value-first discipline, it’s just noise. I champion AI solutions that prove themselves — reliable, cost-effective, and aligned with real business outcomes.'
+    description: 'AI isn’t inherently magical. Without governance, evaluation, and value-first discipline, it’s just noise. I champion AI solutions that prove themselves; reliable, cost-effective, and aligned with real business outcomes.'
   }
 ];
 
