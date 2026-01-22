@@ -24,7 +24,7 @@ export const POC_DATA: Project[] = [
     summary: 'A serverless AI platform built with AWS Lambda and Amazon Bedrock that systematically audits software requirements for precision and quality. It streamlines the technical review process by providing automated scoring, actionable improvement suggestions, and a dedicated performance harness to ensure high-accuracy AI outputs.',
     category: 'POC',
     tags: ['AWS', 'Generative AI', 'EVALs', 'SDLC',],
-    link: 'https://req-eval.trainoronline.com/'
+    link: 'https://req-eval.the-trainors.com/'
   },
 ];
 
